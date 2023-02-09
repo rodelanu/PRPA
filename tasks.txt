@@ -1,6 +1,6 @@
 
 PRPA - [*] poner comentarios de chatGPT a los códigos
-       [] vídeo sobre multiprocessing
+       [] neso academy - the critical-section problem
 
 TPRO - [] pasar ejercicios 4,6,7,10,11,12 del tema 2
        [] transcribir texto de 7 hojas
