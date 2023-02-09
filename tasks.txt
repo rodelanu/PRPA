@@ -1,5 +1,5 @@
 
-PRPA - [] poner comentarios de chatGPT a los códigos
+PRPA - [*] poner comentarios de chatGPT a los códigos
        [] ejecutar todos los códigos 
        [] vídeo sobre multiprocessing
 
@@ -18,3 +18,4 @@ TFG - [] escribir al menos una hoja de la introducción
 * guardar el material del cuatrimestre pasado en una caja
 * borrar imágenes de manga del móvil desde el ordenador
 * ¿es malo mascar chicle?
+* limpiar pantallas de móvil y portátil
