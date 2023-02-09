@@ -1,0 +1,31 @@
+
+La última versión de ubuntu estable es la 20.04, la llaman 'Long Term Service' (LTS).
+Se puede instalar la versión 20.10, pero creo que dará más guerra si no lo habéis usado
+mucho. Solo recomiendo la 20.10 para máquinas muy modernas que no tengan soporte en
+la versión 20.04.
+
+Hay muchos tutoriales para hacerlo en internet. Pongo un par de ellos:
+
+https://ubunlog.com/como-instalar-ubuntu-20-04-lts-junto-a-windows/
+
+https://www.muycomputer.com/2020/11/09/windows-10-y-ubuntu-20-guia/
+
+Hago un breve resumen de los pasos:
+
+1. Hay que descargar un fichero con la versión ubuntu. El fichero tiene extensión .iso.
+   Se puede grabar en un DVD o en un pen-drive.
+
+2. Hay que particionar el disco. Este es paso más peligroso. Debéis aseguraros de que el
+ordenador no se apague en mitad del proceso, si es un portátil conviene tenerlo enchufado.
+Se puede hacer desde Windows, o desde la aplicación de instalación de Ubuntu.
+
+3. Se debe reiniciar el ordenador con el DVD introducido o el pen-drive. Se debe indicar
+al ordenador que arranque desde esa unidad.
+
+4. Cuando se arranca desde la unidad externa se inicia una versión de ubuntu que sirva
+para instalarlo. Si hemos particionado el disco desde Windows habrá que instalar ubuntu
+en esa partición. En caso contrario el programa de instalación pregunta si pregunta si
+queremos instalar ubuntu junto con windows y propondrá la forma de hacer la partición.
+
+5. Una vez finalizado el proceso el sistema reiniciará. Al inicia mostrará un menú sobre
+el sistema que queremos arrancar.

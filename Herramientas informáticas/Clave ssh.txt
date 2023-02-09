@@ -1,0 +1,28 @@
+
+Este curso va a ser necesario la creación de una clave ssh para poder acceder de forma
+remota a ordenadores remotos. Por ejemplo, para acceder a github vamos a necesitar 
+generar esa clave. Para generar la clave deben teclear el comando
+
+ssh-keygen -t rsa -b 2048
+
+Ese comando creará dos ficheros en el directorio ~/.ssh: id_rsa, id_rsa.pub
+
+Debéis subir una copia del fichero id_rsa.pub pero cambiando su nombre: 
+<usuario de correo>.pub
+
+Donde el <usuario de correo> es el usuario de correo que tenéis de la ucm, sin el @ucm.es
+
+El fichero id_rsa lo debéis guardar bien. Lo podéis grabar en un fichero USB en caso de 
+que queráis usarlo en varios ordenadores. No lo mandéis nunca por correo. Normalmente, 
+no vais a poder usar vuestra clave directamente desde una unidad USB. Para usarla en el 
+laboratorio, habrá que copiarla en el disco duro del ordenador y restringir los permisos. 
+Normalmente. las claves se copian en el directorio ~/.ssh, si no existe se puede crear. 
+Por ejemplo
+
+cp /media/alumno/<nombre de la unidad>/id_rsa ~/.ssh/
+chmod 600 ~/.ssh/id_rsa
+Para saber el nombre que le ha dado el sistema a la unidad USB podemos usar la tecla tabulador.
+
+MUY IMPORTANTE: Al finalizar la sesión en el laboratorio no se olvide borrar el fichero
+
+rm ~/.ssh/id_rsa

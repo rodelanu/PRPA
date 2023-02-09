@@ -1,0 +1,48 @@
+
+Como señalé al inicio del curso, tenéis a disposición dos clústeres de raspberries pi que
+podéis usar para poder hacer las pruebas que queráis. Las direcciones de los clústeres
+son picluster01.mat.ucm.es y picluster02.mat.ucm.es. Para usarlos os he pedido la una
+clave, vosotros tenéis la clave privada y yo la pública. La clave privada la debéis tener
+en el fichero ~/.ssho/id_rsa. Se puede tener en otro sitio, pero complica un poco
+algunas cosas.
+
+Para acceder al clúster primero debemos añadir la clave privada a nuestro 'agente de
+claves'. Para ello ejecutamos el comando
+
+ssh-add
+
+y podemos comprobar que está con el comando
+
+ssh-add -L
+
+Para que el manjo en el clúster debemos 'meter' nuestro ordenado en la red del clúster.
+Eso se hace con el comando sshuttle. Para instalar ese comando debemos ejecutar el comando.
+
+sudo pip3 instal sshuttle
+
+
+Luego debemos usar el comando
+
+ssshuttle -HNr usuario@picluster0X.mat.ucm.es -x picluster0X.mat.ucm.es.
+
+Donde x vale 0 ó 1 dependiendo del clúster que queramos usar y usuario es vuestro usuario
+de correo de ucm sin el @ucm.es.
+
+Ahora podremos accede a cada nodo del cluster con el comando
+
+ssh usuario@clus-0Y
+
+Donde Y es el número del nodo Y en {1,2,3,4,5}.
+
+Los directorios personales están compartidos (/home/usuario) entre todas las máquinas.
+Pero en todas las máquinas hay un directorio llamado externo (/home/usuario/externo) que
+está asociado a un disco propio de cada máquina.
+
+Cuando usemos spark, el nodo 1 es el nodo maestro. Pero por ahora todos los nodos son 
+iguales. Por ahora podéis intentar los programas que hemos visto de paso de mensajes.
+Para ello, debéis saber que las redes internas de los clústeres tienen como IP el número
+192.168.135.Y.
+
+Para ordenar el uso de las raspberries pi he puesto una hoja de cálculo compartida para
+que podáis reservar el aula. Por favor, mantened el fichero de forma que las citas estén
+siempre ordenadas. Si alguien no va a usar la cita reservada debe borrar la fila correspondiente.

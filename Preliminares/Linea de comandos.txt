@@ -1,0 +1,45 @@
+
+Usar un terminal del jupyterlab de la asignatura. Ejectua el siguiente contenido para
+grabar lo que ocurre en la sesión
+
+script session.txt
+
+Descargarse el fichero para la tarea 
+
+git clone /srv/git/prpa
+
+
+Accede a la raíz del directorio recién clonado.
+
+cd inf-mat_17-18
+
+
+Crea un fichero llamado fichero datos_XX.txt, donde XX se corresponde con el número que 
+se te ha dado al principio de la clase. Sube el nuevo fichero al repositorio. Si hay
+conflictos, resuélvelos de forma que tu nombre aparezca en primer lugar.
+
+A continuación realiza comandos para lo siguiente:
+
+* Ver el contenido del directorio, con toda la información y los ficheros ocultos
+   (opciones -a y -l)
+* Ver el contenido del directorio examenes
+* Borrar los ficheros que empiezan con just
+* Hacer una copia del directorio ejemplos que se llame ejemplos_new.
+* Ir al directorio ejemplos_new
+* Hacer una copia del fichero escudo.png (que está en el directorio padre) dentro del
+   directorio ejemplos y otra en el directorio actual (ejemplos_new)
+* Vuelve al directorio raíz del repositorio y borra el directorio ejemplos_new.
+* Buscar la palabra radius en los ficheros que acaben en py
+* Subir al directorio padre
+* Buscar en todos los directorios los ficheros acabados en tex
+* Ver lo que ocupan los ficheros en el directorio actual. Preferiblemente ordenados de
+   menor a mayor tamaño.
+* Borrar el contenido directorio de mayor tamaño
+* Ir al directorio examenes/feb
+* Ver las primeras 20 líneas del fichero ene2018.tex
+* Ver las últimas 20 líneas del fichero ene2018.tex
+* Ir directamente al directorio inicial (inf-mat_17-18)
+
+Finalizar la sesión: pulsar ctrl+D
+
+Subir a la tarea el fichero session.txt
