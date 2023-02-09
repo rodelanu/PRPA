@@ -1,4 +1,30 @@
 
+"""
+
+Este es un programa en Python que utiliza la librería "multiprocessing" para crear 
+varios procesos que trabajan en una sección crítica compartida. El objetivo es 
+incrementar un contador compartido y asegurarse de que cada proceso solo tenga 
+acceso a la sección crítica en un momento dado.
+
+El programa define una función "task" que representa un proceso y una función 
+"main" que crea y ejecuta los procesos. La función "is_anybody_inside" se utiliza 
+para verificar si algún otro proceso está actualmente en la sección crítica.
+
+El contador compartido se crea como un objeto "Value" y el estado de cada proceso 
+se mantiene en un arreglo "critical". Cada proceso entra en un ciclo de 100 iteraciones y 
+ejecuta una sección crítica en cada iteración. Primero, imprime un mensaje indicando 
+el inicio de la sección no crítica, luego verifica si algún otro proceso está en 
+la sección crítica usando "is_anybody_inside", y si es así, cede el turno. 
+Si ningún otro proceso está en la sección crítica, entra a ella y actualiza el 
+contador compartido, luego imprime un mensaje indicando el final de la sección crítica.
+
+Después de crear todos los procesos, el programa espera a que terminen antes de 
+imprimir el valor final del contador. El resultado final debería ser un valor 
+igual a 800 (100 por cada proceso), pero esto puede variar dependiendo del orden 
+en que los procesos acceden a la sección crítica.
+
+"""
+
 from multiprocessing import Process, Value, Array
 
 N = 8
