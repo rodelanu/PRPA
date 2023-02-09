@@ -1,0 +1,20 @@
+
+PRPA - [] poner comentarios de chatGPT a los códigos
+       [] ejecutar todos los códigos 
+       [] vídeo sobre multiprocessing
+
+TPRO - [] pasar ejercicios 4,6,7,10,11,12 del tema 2
+       [] transcribir texto de 7 hojas
+       [] leer apuntes de deyors de los temas 2 y 3
+
+GCOM - [] preguntar a david sobre lo del 0.047
+       [] poner bien lo del código suponiendo que el error de la entropía está bien
+       [] pasar las definiciones y ejercicios que hemos ido haciendo
+       [] video sobre calculo de dimension de Hausdorff
+
+TFG - [] escribir al menos una hoja de la introducción
+      [] archivo de Deutsch-Jozsa
+
+* guardar el material del cuatrimestre pasado en una caja
+* borrar imágenes de manga del móvil desde el ordenador
+* ¿es malo mascar chicle?
